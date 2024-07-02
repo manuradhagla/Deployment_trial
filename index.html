@@ -1,52 +1,57 @@
 <html>
-    <head>
-        <title>Grid</title>
-         <style>
-            body{
-                background: linear-gradient(300deg, black, rgb(204,235,255),rgb(0,77,128),black);
-            }
-			#div01{
-				height: 60vh;
-				display: grid;
-				grid-template-columns: 1fr 1fr 1fr;
-				grid-template-rows: 1fr 1fr 1fr;
-				width: 500px;
-				margin-top: 50px;
-				margin-left: auto;
-				margin-right: auto;
-			}
-
-
-			.items{
-				background-color: skyblue;
-				border: 2px solid black;
-				margin: 3px;
-
-			}
-			
-			#item01{
-				grid-column: span 2;
-			}
-
-			#item02{
-				grid-row: span 2;
-			}
-
-		</style>
-
-    </head>
-    <body>        
-            <div id="div01">
-                <div class="items" id="item01"></div>
-                <!-- <div class="items"></div> -->
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items"></div>
-                <div class="items" id="item02"></div>
-                <!-- <div class="items"></div> -->
-                <div class="items"></div>
-                <div class="items"></div>
-                
-        </div>
-    </body>
+<head>
+    <title>Character Page</title>
+    <style>
+	body,html{
+	    padding:0px;
+	    margin:0px;
+        body {
+            font-family: Arial, sans-serif;
+            background-image: url('background.jpg');
+            background-size: 100%;
+            text-align:center;
+	    background-repeat:no repeat;
+	    backdrop-filter: blur(13px);
+	    
+	    
+            
+            
+        }
+        .character-image {
+            max-width: 60%;
+            height: auto;
+            border-radius: 17px;
+	    margin:10px;
+        }
+        .quote {
+            font-size: 24px;
+            font-style: italic;
+	    color:white;
+            margin: 20px 20px;
+	    text-align: center;
+        }
+        .button {
+            background-color: #4CAF50;
+            color: white;
+	    padding:20px 30px;
+            text-align: center;
+            text-decoration: none;
+            border-radius: 10px;
+	    margin:0px;
+        }
+        .button:hover {
+            background-color: #45a049;
+        }
+	h1{
+	color:purple;s
+	font-family: cursive;
+	}
+    </style>
+</head>
+<body>
+    <h1>Yami Sukehiro</h1>
+    <img src="solo leveling.jpg" alt="Character Image" class="character-image"><br>
+    <p class="quote">"If you guys are hunters, I’m saying you should be ready to become hunted."</p><br><br>
+    <a href="more_about.html" class="button">Know More</a>
+</body>
 </html>
